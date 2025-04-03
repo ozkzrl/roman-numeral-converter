@@ -12,7 +12,7 @@ Parameters:
     myKeyPairName:
       Description: Select the name of your keyname.
       Type: AWS::EC2::KeyPair::KeyName
-      Default: secon_key
+      Default: second_key
     
     myInstanceType:
       Description: Slect your Instance Type. 
