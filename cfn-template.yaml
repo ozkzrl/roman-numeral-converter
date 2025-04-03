@@ -8,6 +8,7 @@ Parameters:
     myVPC:
       Description: Select your VPC.
       Type: AWS::EC2::VPC::Id
+      Default: /aws/service/global-infrastructure/services/ec2/default-vpc
 
     myKeyPairName:
       Description: Select the name of your keyname.
