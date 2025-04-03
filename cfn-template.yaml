@@ -52,7 +52,6 @@ Resources:
             wget ${FOLDER}/roman-numerals-converter-app.py
             wget -P templates ${FOLDER}/templates/index.html
             wget -P templates ${FOLDER}/templates/convert.html
-            python3 roman-numerals-converter-app.pyy
             python3 roman-numerals-converter-app.py
 
     myWebSecGroup:
@@ -74,13 +73,13 @@ Resources:
             CidrIp: 0.0.0.0/0            
         Tags: 
           - Key: Name
-            Value: paul-roman-number-conventer
+            Value: paul-roman-number-converter
         VpcId: !Ref myVPC
       
 
 Outputs:
   WebSiteURL:
-    Description: Roman Numerals Conventer Application URL
+    Description: Roman Numerals Converter Application URL
     Value: !Sub
      - http://${PublicDnsName}:8080
      - PublicDnsName: !GetAtt myWebServer.PublicDnsName
